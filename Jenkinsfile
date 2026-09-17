@@ -1,6 +1,7 @@
 pipeline {
-    agent label 'windows-agent'
-
+    agent {
+        label  'windows-agent'
+    }
     stages {
 
         stage('Identify Branch') {
